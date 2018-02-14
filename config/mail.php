@@ -16,9 +16,9 @@ return [
     |
     */
 
-//    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
-    'mailgun'=>env('MAIL_DRIVER', 'smtp'),
+//    'driver'=>env('MAIL_DRIVER', 'sparkpost'),
     /*
     |--------------------------------------------------------------------------
     | SMTP Host Address
@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.qq.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,11 +55,15 @@ return [
     | used globally for all e-mails that are sent by your application.
     |
     */
-
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => '272592782@qq.com',
+        'name' => '聆听雨声',
     ],
+
+//    'from' => [
+//        'address' => env('MAIL_FROM_ADDRESS', '272592782@qq.com'),
+//        'name' => env('MAIL_FROM_NAME', '聆听雨声'),
+//    ],
 
     /*
     |--------------------------------------------------------------------------

@@ -15,5 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 //demo acl 1
-Route::resource('posts','PermissionsDemo\PostsController');
-//Route::get('posts/{id}','PermissionsDemo\PostsController@show');
+//Route::resource('posts','PermissionsDemo\PostsController');
+Route::get('posts/{id}','PermissionsDemo\PostsController@show');
+Route::get('send_mail','EmailDemo\TestEmailController@send');
+Route::any('smail_markdown','EmailDemo\TestEmailController@smail_markdown');
